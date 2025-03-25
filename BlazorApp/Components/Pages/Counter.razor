@@ -12,24 +12,27 @@
     @onclick="IncrementCount"
     disabled=@(currentCount >=10)
 >
-    @(currentCount < 10 ? "Click me (+5)" : "Max atteint")
+    @(currentCount < 10 ? $"Click me (+{IncrementAmount})" : "Max atteint")
 </button>
 
 @code {
     private int currentCount = 0;
 
+    [Parameter]
+    public int IncrementAmount { get; set; } = 2;
+
     private void IncrementCount()
     {
         // currentCount++;
 
-        if(currentCount < 10) 
+        if(currentCount < 30) 
         {
-            currentCount += 5;
+            currentCount += IncrementAmount;
 
             // On s'assure que le count ne dépasse pas 10
-            if(currentCount > 10)
+            if(currentCount > 30)
             {
-                currentCount = 10;
+                currentCount = 30;
             }
         }
     }
