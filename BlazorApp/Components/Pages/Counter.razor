@@ -7,7 +7,13 @@
 
 <p role="status">Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button 
+    class="btn btn-primary" 
+    @onclick="IncrementCount"
+    disabled=@(currentCount >=10)
+>
+    @(currentCount < 10 ? "Click me (+5)" : "Max atteint")
+</button>
 
 @code {
     private int currentCount = 0;
@@ -19,6 +25,12 @@
         if(currentCount < 10) 
         {
             currentCount += 5;
+
+            // On s'assure que le count ne dépasse pas 10
+            if(currentCount > 10)
+            {
+                currentCount = 10;
+            }
         }
     }
 }

@@ -77,3 +77,4 @@ c:\wamp64\www\php\Blazor\blazor_base\BlazorApp\obj\Debug\net9.0\refint\BlazorApp
 c:\wamp64\www\php\Blazor\blazor_base\BlazorApp\obj\Debug\net9.0\BlazorApp.pdb
 c:\wamp64\www\php\Blazor\blazor_base\BlazorApp\obj\Debug\net9.0\BlazorApp.genruntimeconfig.cache
 c:\wamp64\www\php\Blazor\blazor_base\BlazorApp\obj\Debug\net9.0\ref\BlazorApp.dll
+c:\wamp64\www\php\Blazor\blazor_base\BlazorApp\obj\Debug\net9.0\BlazorApp.sourcelink.json
